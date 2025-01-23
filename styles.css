@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 50px;
+    background-color: #f0e807;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;    /* To make navbar stick at the top while scrolling */
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 1;     /* To allow it to be clickable even when over other content */
+}
+
+a {
+    color: black;
+    font-family: Impact, fantasy;
+    font-size: large;
+    transition: background-color 0.5s linear;   /* Transition applied to see the hover effect over the links */
+}
+
+a:hover {
+    background-color: white;
+}
+
+
+header {
+    text-align: center;
+    margin: 10px;
+}
+
+body {
+    background-color: #9e1010;
+    color: white;
+}
+
+h1 {
+    font-family: Courier, monospace;
+}
+
+p {
+    margin: 10px;
+    font-family: Trebuchet MS, sans-serif;
+    text-align: center;
+}
+
+#headerimg {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    box-shadow: 5px 5px yellow;
+}
+
+.gamesHeader {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid yellow;
+}
+
+.aboutHeader {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid yellow;
+}
+
+.indexHeader {
+    margin: 10px;
+    border: 2px solid yellow;
+    padding: 10px;
+}
+
+.contactHeader {
+    margin: 10px;
+    padding: 10px;
+}
+
+.gamesMain {
+    display: grid;
+    margin: 10px;
+    border: 2px solid yellow;
+    grid-template-columns: 1fr 1fr;     /* Made the main section a grid to align the elements of main */
+}
+
+.contactMain {
+    margin: 10px;
+}
+
+.poster {
+    margin: 30px;
+    text-align: center;
+}
+
+.features {
+    margin: 30px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: larger;
+    border: 2px solid yellow;
+}
+
+.vid {
+    margin: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;     /* To allow video to take both columns */
+    text-align: center;
+}
+
+.ending {
+    margin: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;     /* To allow ending to take both columns */
+}
+
+#rdrPoster {
+    width: 100%;
+    max-width: 426px;
+    height: auto;
+    box-shadow: 5px 5px yellow;
+    transition: all 0.5s linear;
+}
+
+#rdrPoster:hover {
+    transform: scale(1.1);
+}
+
+#gtaPoster {
+    width: 100%;
+    max-width: 426px;
+    height: auto;
+    box-shadow: 5px 5px yellow;
+    transition: all 0.5s linear;
+}
+
+#gtaPoster:hover {
+    transform: scale(1.1);
+}
+
+#trPoster {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    box-shadow: 5px 5px yellow;
+    transition: all 0.5s linear;
+}
+
+#trPoster:hover {
+    transform: scale(1.1);
+}
+
+li {
+    margin: 40px;
+}
+
+.aboutSummary{
+    margin: 10px;
+    padding: 10px;
+}
+
+input {
+    width: 100%;
+    margin: 5px;
+    border: 2px solid yellow;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+textarea {
+    width: 100%;
+    margin: 5px;
+    border: 2px solid yellow;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+form {
+    margin: 10px;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    background-color: #f0e807;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: Verdana, sans-serif;
+    cursor: pointer;    /* To make the cursor pointer while hovering */
+}
+
+.Conlinks {
+    margin: 10px;
+}
+
+
+footer {
+    background-color: #f0e807;
+    color: black;
+    font-family: Trebuchet MS, sans-serif;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;     /* For forcing the footer at the bottom */
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+
+.page {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content {
+    padding-bottom: 46px;
+}
+
+video {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+}
+
+@media (max-width:1000px){
+    .gamesMain {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .features {
+        order: -1;
+    }
+}
+
+@media (max-width:800px){
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
